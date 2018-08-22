@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    background: #e4e4e4;
+    border-bottom: 1px solid lightgrey;
+    font-family: 'Lato', sans-serif;
+}
+
+li.luxbar-item > a {
+    font-family: 'Lato', sans-serif;
+}
+
+li.main-item > a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    height: 35px;
+    margin-left: 60px;
+}
+
+nav {
+    float: left;
+    font-weight: 600;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+
+nav a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* basic styling for sections */
+
+#reasons{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(#092b2f, #008799);
+}
+
+#call-to-action {
+    height: 500px;
+    background: white;
+    margin-top: 58px;
+}
+
+
+/* call to action section*/
+
+#call-container {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    max-width: 66vw;
+    margin: auto;
+}
+
+.sign-up-form {
+    max-width: 250px;
+    margin: 1.8rem auto;
+    border: 1px solid #008799;
+    padding: 2rem;
+    background: #e2e8e7;
+    font-family: 'Lato', sans-serif;
+}
+
+#form-intro > p {
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.sign-up-form > label {
+    display: block;
+    margin-left: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.9em;
+}
+
+.sign-up-form > input {
+    display: block;
+    width: 100%;
+    padding-left: 5px;
+}
+
+label + input {
+    margin-top: 2px;
+}
+
+input + label{
+    margin-top: 5px;
+}
+
+#signUpBtn, #logInBtn{
+    border: 0;
+    background: rgb(56, 29, 151);
+    padding: .5rem;
+    color: white;
+    display: inline;
+    margin: 1rem 0;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#signUpBtn{
+    background: #26abab;
+}
+
+#logInBtn{
+    background: #82a603;
+}
+
+#img-call{
+    align-self: center;
+    border: 1px solid darkgrey;
+    align-items: center;
+    max-width: 95%;
+}
+
+
+/* reasons section*/
+
+#reasons > h2 {
+    text-align: center;
+    padding-top: 60px;
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    color: #fbfbfb;
+    font-weight: 300;
+    max-width: 90vw;
+    margin: auto;
+}
+
+.reasons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 80vw;
+    margin: auto;
+}
+
+
+
+.reason-provider {
+    font-family: 'Open Sans', sans-serif;
+    width: 280px;
+    border:  1px solid grey;
+    padding: 5px;
+    display: inline-block;
+    background: #f9f6f6;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.reason-provider > h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.reason-provider > p {
+    font-size: 0.9em;
+    padding: .8rem;
+    margin: 0;
+}
+
+.reason-provider > button {
+    border: 0;
+    background: white;
+    padding: 0.5rem;
+    color: rgb(56, 29, 151);
+    border: 2px solid rgb(56, 29, 151);
+    display: inline;
+    margin: 0.5rem 5.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+.reason-provider > button:hover {
+    background: rgb(56, 29, 151);
+    color: white;
+}
+
+.icon {
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.icon > img {
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    background: #011b31;
+    color:#d8d8d1;
+    font-family: 'Lato', sans-serif;
+    /* font-size: 0.9em; */
+    /* cursor: default; */
+}
+
+.footer-container {
+    margin-left: 12.5vw;
+    max-width: 50vw;
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin: auto;
+    padding: 18px;
+}
+
+#copyright{
+    max-width: 50vw;
+    margin: auto;
+    text-align: right;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    /* font-size: 0.8em; */
+    line-height: 0.5em;
+}
+
+.footer-links > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    line-height: 1.4em;
+}
+
+#follow-us > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#follow-us > ul > li {
+    float: left;
+    margin-right: 10px;
+}
+
+#follow-us > ul > li > a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    width: 
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #69695a;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #69695a;
+}
+
+a:hover, a:active { text-decoration: none; color:#82a603; }
+
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.card-shadow {
+    -webkit-box-shadow: 0 10px 6px -6px rgb(65, 65, 65);
+       -moz-box-shadow: 0 10px 6px -6px rgb(65, 65, 65);
+            box-shadow: 0 10px 6px -6px rgb(65, 65, 65);
+}
+
+li.luxbar-item:hover{
+    color: #008799;
+    background: #e0e0e0 !important;
+}
+
+.luxbar-checkbox:checked ~ .luxbar-menu {
+    opacity: 0.96;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1705px) {
+    #call-container {
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 1705px) {
+    #call-container {
+        max-width: 75vw;
+    }
+
+    .footer-container, #copyright{
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 1625px) {
+    #call-container {
+        max-width: 80vw;
+    }
+
+    .footer-container, #copyright{
+        max-width: 65vw;
+    }
+}
+
+@media screen and (max-width: 1425px) {
+    #call-container {
+        max-width: 90vw;
+    }
+
+    .footer-container, #copyright{
+        max-width: 70vw;
+    }
+
+    .reasons-container{
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 1225px) {
+    #call-container {
+        max-width: 90vw;
+    }
+
+    .reasons-container{
+        width: 90vw;
+    }
+
+    .footer-container, #copyright{
+        max-width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    #call-container {
+        max-width: 95vw;
+    }
+
+}
+
+
+@media screen and (max-width: 1049px) {
+
+    .reasons-container{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #call-container, .reasons-container {
+        max-width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        height: auto !important;
+        justify-content: flex-start;
+    }
+
+    #call-container {
+        margin-top: 68px;
+    }
+
+    .reason-provider{
+        margin-top:20px;
+    }
+
+    .reason-provider:first-of-type{
+        margin-top: 40px;
+    }
+
+    .reason-provider:last-of-type{
+        margin-bottom: 30px;
+    }
+
+    #reasons{
+        height: auto;
+    }
+
+    #call-to-action{
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .logo{
+        margin-left: 60px;
+    }
+    .luxbar-hamburger {
+        position: absolute !important;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .footer-container, #copyright{
+        height:auto;
+        flex-flow: row wrap;
+        width: 65vw;
+    }
+
+    #footer-nav{
+        order: 1;
+        width: 107px;
+    }
+
+    #footer-specialists{
+        order: 2;
+        width: 170px;
+    }
+
+    #follow-us{
+        order: 3;
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .footer-container{
+        height:auto;
+        flex-flow: row wrap;
+        width: 75vw;
+    }
+
+    #copyright {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-container{
+        height:auto;
+        flex-flow: row wrap;
+    }
+
+    .footer-container, #copyright {
+        max-width: 85vw !important;
+        width: 85vw;
+    }
+}
+
+
+

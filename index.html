@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CareDash</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/ico">
+    <!-- import responsive navbar styling (luxbar) and Google fonts -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Patua+One|Roboto+Condensed" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- implementing luxbar - a responsive navbar with dropdown functionality  -->
+    <div class="luxbar luxbar-fixed">
+            <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
+            <div class="luxbar-menu luxbar-menu-left luxbar-menu-light">
+                <ul class="luxbar-navigation">
+                    <li class="luxbar-header">
+                        <a class="luxbar-brand" href="#">
+                            <img src="assets/caredash-logo.svg" alt="caredash-logo" class="logo">
+                        </a>
+                        <label class="luxbar-hamburger luxbar-hamburger-doublespin"
+                                for="luxbar-checkbox"> <span></span> </label>
+                    </li>
+                    <li class="luxbar-item dropdown main-item"><a href="#">Dropdown</a>
+                        <ul>
+                            <li class="luxbar-item noselect" ><a href="#">Dropdown Menu Item 1</a></li>
+                            <li class="luxbar-item noselect" ><a href="#">Dropdown Menu Item 2</a></li>
+                            <li class="luxbar-item noselect" ><a href="#">Dropdown Menu Item 3</a></li>
+                            <li class="luxbar-item noselect" ><a href="#">Dropdown Menu Item 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="luxbar-item main-item"><a href="#">Sign Up</a></li>
+                    <li class="luxbar-item main-item"><a href="#reasons">Providers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="call-to-action">
+            <div id="call-container">
+                <img src="assets/dentist-chair-text.png" alt="" id="img-call" class="one-edge-shadow">
+                <form action="" class="sign-up-form one-edge-shadow">
+                    <div id="form-intro">
+                        <p>Sign Up with CareDash to Edit your Provider Profile</p>
+                    </div>
+                    <label for="first_name">First Name</label>
+                    <input name="first_name" type="text">
+                    <label for="last_name">Last Name</label>
+                    <input name="last_name" type="text">
+                    <label for="email">Email Address</label>
+                    <input name="email" type="email">
+                    <label for="pass">Password</label>
+                    <input name="pass" type="password">
+                    <label for="pass2"><label for="pass2"></label>Confirm Password</label>
+                    <input name="pass2" type="password">
+                    <input type="submit" value="Sign Up" id="signUpBtn">
+                    <input type="submit" value="Log in" id="logInBtn">
+                </form>
+
+            </div>
+
+        </div>
+        <div id="reasons">
+            <h2>Reasons to Sign Up as a Provider on CareDash</h2>
+            <div class="reasons-container">
+                <div class="reason-provider card-shadow">
+                        <div class="icon">
+                            <img src="assets/icons/doctor-1.png" alt="reason-thumbnail">
+                        </div>
+                        <h3>Reason 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto natus, eum ex eaque praesentium consequuntur ratione eveniet rem ea.</p>
+                        <button class="noselect">Learn More</button>
+                    </div>
+                    <div class="reason-provider card-shadow">
+                        <div class="icon">
+                            <img src="assets/icons/first-aid-kit.png" alt="reason-thumbnail">
+                        </div>
+                        <h3>Reason 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laudantium odio architecto ut pariatur maxime tempore non beatae ullam est.</p>
+                        <button class="noselect">Learn More</button>
+                    </div>
+                    <div class="reason-provider card-shadow">
+                        <div class="icon">
+                            <img src="assets/icons/height.png" alt="reason-thumbnail">
+                        </div>
+                        <h3>Reason 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto natus, eum ex eaque praesentium consequuntur ratione eveniet rem ea.</p>
+                        <button class="noselect">Learn More</button>
+                    </div>
+            </div>
+        </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links" id="footer-nav">
+                    <p>CareDash</p>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Write a Review</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" id="footer-specialists">
+                    <p>Specialists</p>
+                    <ul>
+                        <li><a href="">Primary Care Physicians</a></li>
+                        <li><a href="">Pediatricians</a></li>
+                        <li><a href="">Optometrists</a></li>
+                        <li><a href="">Dentists</a></li>
+                    </ul>
+                </div>
+                <div id="follow-us">
+                    <p>Follow us on social media</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/caredashcareers/"><img src="assets/social_media/5293 - Facebook.png" alt=""></a></li>
+                        <li><a href="https://twitter.com/caredash?lang=en"><img src="assets/social_media/5294 - Twitter I.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/caredash/?hl=en"><img src="assets/social_media/5301 - Instagram.png" alt=""></a></li>
+                        <li><a href="https://www.pinterest.com/caredash/"><img src="assets/social_media/5298 - Pinterest.png" alt=""></a></li>
+                    </ul>
+                </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2018 CareDash</p>
+            <div>Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a></div>
+        </div>
+    </footer>
+
+</body>
+</html>
